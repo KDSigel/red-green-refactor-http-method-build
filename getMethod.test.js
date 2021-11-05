@@ -11,9 +11,9 @@ Accept-Language: us-en`);
 
     it('takes an HTTP request and returns the method', async() => {
         const actual = getMethod(`DELETE / HTTP/1.1
-        Host: example.com
-        Accept-Language: us-en`);
-        expect(actual).toEqual('GET');
+Host: example.com
+Accept-Language: us-en`);
+        expect(actual).toEqual('DELETE');
     });
 
 })
