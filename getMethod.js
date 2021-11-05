@@ -1,6 +1,5 @@
 const getMethod = (request) => {
-const requestRows = request.split('\r\n');
-const [method] = requestRows[0].split(' /');
+const [method] = request.split(' /');
       return method;
     };
     
